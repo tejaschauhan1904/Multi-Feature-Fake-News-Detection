@@ -1,0 +1,10 @@
+{
+  "best_model": "Logistic Regression (LASSO)",
+  "best_accuracy": 0.9953,
+  "best_f1_score": 0.9953,
+  "best_roc_auc": 0.9983,
+  "ranked_models": ["Logistic Regression (LASSO)", "Random Forest", "Naive Bayes"],
+  "model_count": 3,
+  "evaluation_date": "2026-11-17 22:32:13",
+  "methodology_note": "Logistic Regression (LASSO) evaluated over full 4,000 TF-IDF vocabulary + 32 numerical features; Random Forest and Naive Bayes evaluated over top 50 TF-IDF features + 32 numerical features to preserve memory. Best model selected via balanced F1-score and ROC-AUC criteria."
+}

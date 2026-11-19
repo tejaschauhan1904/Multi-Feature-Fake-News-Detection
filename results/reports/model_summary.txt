@@ -1,0 +1,49 @@
+================================================================================
+MULTI-FEATURE FAKE NEWS DETECTION: MODEL COMPARISON REPORT
+Generated: 2026-11-17 22:32:13
+================================================================================
+
+1. EXECUTIVE SUMMARY
+--------------------------------------------------------------------------------
+Three supervised machine learning algorithms were trained and evaluated on 
+stratified held-out test data (80:20 train-test ratio, seed = 42).
+
+Best Performing Model: Logistic Regression (LASSO)
+- Accuracy:  99.53%
+- Precision: 0.9947
+- Recall:    0.9960
+- F1-Score:  0.9953
+- ROC-AUC:   0.9983
+
+2. FULL MODEL PERFORMANCE COMPARISON
+--------------------------------------------------------------------------------
+Model                          | Accuracy | Precision | Recall   | F1_Score | ROC_AUC 
+--------------------------------------------------------------------------------
+Logistic Regression (LASSO)    | 0.9953   | 0.9947    | 0.9960   | 0.9953   | 0.9983  
+Random Forest                  | 0.9933   | 0.9907    | 0.9960   | 0.9934   | 0.9999  
+Naive Bayes                    | 0.8960   | 0.9393    | 0.8467   | 0.8906   | 0.9459  
+
+3. ARCHITECTURAL & FEATURE REPRESENTATION NOTES
+--------------------------------------------------------------------------------
+- Model 1 (Logistic Regression with LASSO):
+  Trained on combined sparse matrix comprising 4,000 TF-IDF unigrams/bigrams
+  plus 32 standardized numerical features (sentiment, readability, linguistic,
+  and statistical). LASSO (L1 regularization) automatically pruned uninformative
+  terms, achieving superior generalization and fast inference.
+
+- Model 2 (Random Forest):
+  Ensemble of 100 decision trees. In order to avoid memory exhaustion and high
+  tree-construction latency from 4,000 dense features, Random Forest utilized all
+  32 numerical features combined with the top 50 highest-variance TF-IDF terms.
+
+- Model 3 (Naive Bayes):
+  Probabilistic classifier with Laplace smoothing (alpha = 1). Assumes conditional
+  independence between terms and numerical dimensions. Serves as a strong fast
+  baseline.
+
+4. SELECTION CRITERIA
+--------------------------------------------------------------------------------
+Model selection prioritizes F1-score and ROC-AUC rather than accuracy alone, ensuring
+balanced sensitivity across both Fake and Real classes without positive-class bias.
+================================================================================
+

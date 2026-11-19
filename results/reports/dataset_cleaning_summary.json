@@ -1,0 +1,13 @@
+{
+  "initial_records": 44898,
+  "cleaned_records": 39100,
+  "duplicates_removed": 5798,
+  "fake_articles": 17905,
+  "real_articles": 21195,
+  "train_split_size": 31280,
+  "test_split_size": 7820,
+  "train_ratio": 0.8,
+  "random_seed": 42,
+  "leakage_mitigation": "Publisher datelines removed, stratified split strictly isolated",
+  "timestamp": "2026-11-17 22:24:40"
+}

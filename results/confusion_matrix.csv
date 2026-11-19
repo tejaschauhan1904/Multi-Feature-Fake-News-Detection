@@ -1,0 +1,13 @@
+"Model","Category","Count"
+"Logistic Regression (LASSO)","True Positive (Real as Real)",747
+"Logistic Regression (LASSO)","True Negative (Fake as Fake)",746
+"Logistic Regression (LASSO)","False Positive (Fake as Real)",4
+"Logistic Regression (LASSO)","False Negative (Real as Fake)",3
+"Random Forest","True Positive (Real as Real)",747
+"Random Forest","True Negative (Fake as Fake)",743
+"Random Forest","False Positive (Fake as Real)",7
+"Random Forest","False Negative (Real as Fake)",3
+"Naive Bayes","True Positive (Real as Real)",635
+"Naive Bayes","True Negative (Fake as Fake)",709
+"Naive Bayes","False Positive (Fake as Real)",41
+"Naive Bayes","False Negative (Real as Fake)",115

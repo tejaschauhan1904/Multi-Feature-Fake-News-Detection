@@ -1,0 +1,23 @@
+{
+  "total_raw_articles": 44898,
+  "raw_fake_count": 23481,
+  "raw_real_count": 21417,
+  "columns": ["title", "text", "subject", "date", "label", "class_name"],
+  "missing_values": {
+    "title_na": 0,
+    "text_na": 0,
+    "subject_na": 0,
+    "date_na": 0
+  },
+  "subject_distribution": {
+    "Government News": 1570,
+    "left-news": 4459,
+    "Middle-east": 778,
+    "News": 9050,
+    "politics": 6841,
+    "politicsNews": 11272,
+    "US_News": 783,
+    "worldnews": 10145
+  },
+  "created_at": "2026-11-17 22:23:38"
+}

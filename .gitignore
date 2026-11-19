@@ -1,0 +1,25 @@
+# R and Python artifacts
+.Rhistory
+.RData
+.Rproj.user
+__pycache__/
+*.py[cod]
+*$py.class
+.env
+venv/
+.venv/
+.pytest_cache/
+.streamlit/secrets.toml
+
+# OS files
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# Large datasets or intermediate caches if desired (preserve original datasets)
+# dataset/cleaned_news.csv
+# dataset/extracted_features.csv
+
+# Logs
+logs/*.log
+r_libs
